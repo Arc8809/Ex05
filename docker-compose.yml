@@ -1,0 +1,10 @@
+
+services:
+  web:
+    image: nginx:latest
+    container_name: Ex05
+    ports:
+      - 8080:80
+    volumes:
+       - ./src:/usr/share/nginx/html
+    restart: unless-stopped

@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIT Akinator</title>
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <script src="assets/scripts/script.js"></script>
+</head>
+
+<body onload="init()">
+    <header>
+        <h1>Which Gem Are You?</h1>
+    </header>
+    <h1>What Crystal gem are you from Steven Universe?</h1>
+    <h2>Can we guess who you are?</h2>
+    <div id="setHolder">
+        <form id="gemSelecter"></form>
+        <div id="result"></div>
+        <div id="imageContainer"></div>
+    </div>
+    <div id="Save">
+        <form id="user-info-form" onsubmit="return validate()">
+            <h2>Save your result?</h2>
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName">
+            <label for="email">Email</label>
+            <input type="text" id="email">
+            <input type="submit" value="Submit" id="submitbtn">
+            <button type="button" id="clear">Clear</button>
+            <p id="error"></p>
+        </form>
+    <div id="Stored">
+    <h2>Stored Information</h2>
+    
+    </div>
+
+    </div>
+    
+</body>
+
+</html>
